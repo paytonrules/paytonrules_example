@@ -2,3 +2,4 @@
 .netlify
 .sass-cache/
 .tool-versions
+_public/ 
