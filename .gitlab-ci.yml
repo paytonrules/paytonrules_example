@@ -6,10 +6,8 @@ stages:
 before_script:
   - export PATH="/root/.dotnet/tools:$PATH"
   - dotnet tool install fornax -g
-  - ls /root/.dotnet/tools
 
 build:
   stage: build
   script:
-    - ls /root/.dotnet/tools
-    - /root/.dotnet/tools/Fornax build
+    - Fornax build
