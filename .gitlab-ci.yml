@@ -1,22 +1,18 @@
-image: mcr.microsoft.com/dotnet/core/sdk:2.2
-
 stages:
   - build
   - deploy
 
-before_script:
-  - export PATH="/root/.dotnet/tools:$PATH"
-  - dotnet tool install fornax -g
-  - curl -sL https://deb.nodesource.com/setup_11.x | bash -
-  - apt-get install -y nodejs
-  - npm install -g netlify
-
 build:
   stage: build
+  image: mcr.microsoft.com/dotnet/core/sdk:2.2
   script:
+    - export PATH="/root/.dotnet/tools:$PATH"
+    - dotnet tool install fornax -g
     - Fornax build
 
 deploy_staging:
   stage: deploy
+  image: nodejs:alpine
   script:
+    - npm install -g netlify
     - netlify deploy --auth $NETLIFY_TOKEN
