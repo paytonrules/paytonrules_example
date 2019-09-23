@@ -12,7 +12,6 @@ build:
 
 deploy_staging:
   stage: deploy
-  image: node:12-alpine
+  image: flemay/netlify
   script:
-    - npm install -g netlify
     - netlify deploy --auth $NETLIFY_TOKEN
