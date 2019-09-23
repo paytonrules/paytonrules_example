@@ -5,8 +5,9 @@ stages:
 
 before_script:
   - dotnet tool install fornax -g
+  - xport PATH="$PATH:/root/.dotnet/tools"
 
 build:
   stage: build
   script:
-    - fornax build
+  - fornax build
