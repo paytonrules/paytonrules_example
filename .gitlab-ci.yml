@@ -1,0 +1,7 @@
+image: mcr.microsoft.com/dotnet/core/sdk:2.2
+
+before_script:
+  - dotnet tool install fornax -g
+
+build:
+  - fornax build
