@@ -12,4 +12,4 @@ build:
   stage: build
   script:
     - ls /root/.dotnet/tools
-    - fornax build
+    - /root/.dotnet/tools/fornax build
