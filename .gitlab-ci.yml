@@ -14,4 +14,4 @@ deploy_staging:
   stage: deploy
   image: flemay/netlify
   script:
-    - netlify deploy --auth $NETLIFY_TOKEN
+    - netlifyctl deploy --auth $NETLIFY_TOKEN
