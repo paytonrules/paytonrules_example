@@ -1,10 +1,11 @@
-# Requirements
+# Requirements 
+More detailed to come
 
-Ruby and the Sass compiler
+Ruby and the Sass compiler (seems to be present on the ruby gitlab image? Seems unlikely)
 Node and the netlify cli
 dotnetcore and the fornax cli
 
-This is just a quick note for setting up gitlab
+This is just a quick note for setting up gitlab. Once I have gitlab working I'll turn this into something real.
 
 # Deploying
 
