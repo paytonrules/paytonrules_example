@@ -9,6 +9,9 @@ build:
     - export PATH="/root/.dotnet/tools:$PATH"
     - dotnet tool install fornax -g
     - Fornax build
+  artifacts:
+    paths:
+      - _public/
 
 deploy_staging:
   stage: deploy
