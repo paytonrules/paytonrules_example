@@ -18,4 +18,4 @@ deploy_staging:
     - export PATH=$PATH:/home/node/.npm-global/bin
     - npm install -g netlify-cli
     - ls
-    - netlify deploy --auth $NETLIFY_TOKEN
+    - netlify deploy --auth $NETLIFY_TOKEN --site=57098d77-10bb-4bf1-800b-767aae435879
