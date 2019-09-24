@@ -1,5 +1,5 @@
 ---
 layout: index
-title: Welcome
+title: Paytonrules
 ---
 
