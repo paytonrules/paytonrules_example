@@ -1,6 +1,7 @@
 stages:
   - build
   - deploy
+  - deploy_prod
 
 build:
   stage: build
@@ -24,3 +25,14 @@ deploy_staging:
     - npm install -g netlify-cli
     - ls
     - netlify deploy --auth $NETLIFY_TOKEN --site=57098d77-10bb-4bf1-800b-767aae435879
+
+deploy_production:
+  stage: deploy_prod
+  image: node:12-alpine
+  when: manual
+  script:
+    - export NPM_CONFIG_PREFIX=/home/node/.npm-global
+    - export PATH=$PATH:/home/node/.npm-global/bin
+    - npm install -g netlify-cli
+    - ls
+    - netlify deploy --prod --auth $NETLIFY_TOKEN --site=57098d77-10bb-4bf1-800b-767aae435879
