@@ -1,0 +1,6 @@
+FROM node:12-alpine
+MAINTAINER Eric Smith
+
+ENV NPM_CONFIG_PREFIX /home/node/.npm-global
+ENV PATH "${PATH}:/home/node/.npm-global/bin"
+RUN ["npm", "install", "-g", "netlify-cli"]
