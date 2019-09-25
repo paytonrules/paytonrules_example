@@ -5,7 +5,7 @@ stages:
 
 build:
   stage: build
-  image: paytonrules/fornax
+  image: paytonrules/fornax:0.1
   script:
     - Fornax build
   artifacts:
