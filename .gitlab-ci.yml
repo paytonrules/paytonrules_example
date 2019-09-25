@@ -7,9 +7,6 @@ build:
   stage: build
   image: paytonrules/fornax:0.2
   script: 
-    - echo "hi"
-    - pwd
-    - ls .
     - Fornax build
   artifacts:
     paths:
