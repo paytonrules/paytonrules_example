@@ -5,5 +5,3 @@ RUN ["wget", "https://github.com/sass/dart-sass/releases/download/1.22.12/dart-s
 RUN ["tar", "-xf", "dart-sass-1.22.12-linux-x64.tar.gz"]
 ENV PATH ./dart-sass:/root/.dotnet/tools:$PATH
 RUN ["dotnet", "tool", "install", "fornax", "-g"]
-
-ENTRYPOINT /bin/sh
