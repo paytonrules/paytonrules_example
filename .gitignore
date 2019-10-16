@@ -3,3 +3,4 @@
 .sass-cache/
 .tool-versions
 _public/ 
+.ionide/
