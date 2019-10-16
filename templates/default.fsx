@@ -10,14 +10,13 @@ let defaultPage (siteModel : SiteModel) pageTitle content =
             title [] [ (!! pageTitle) ]
             link [ Rel "stylesheet"; Type "text/css"; Href "/css/style.css" ]
             link [ Rel "alternate"; Type "application/atom+xml"; Href "/feed.xml"; HtmlProperties.Title "News Feed" ]
-
         ]
         body [] [
-            div [Class "container"] [
-                header [ Class "masthead"] [
-                    h3 [Class "masthead-title"] [
-                        a [ Href "/" ] [ !! (siteModel.title)]
-                        small [ Class "masthead-link" ] [
+            div [Class "wrapper"] [
+                div [Class "hero-image-background"] [
+                    div [Class "hero"] [
+                        header [] [
+                            a [ Href "/" ] [ !! (siteModel.title)]
                             a [ Href "/archive.html"] [ !! "Archive"]
                         ]
                     ]
