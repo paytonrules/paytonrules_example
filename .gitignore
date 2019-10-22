@@ -4,3 +4,4 @@
 .tool-versions
 _public/ 
 .ionide/
+.DS_Store

@@ -1,35 +1,27 @@
 @import 'settings';
 
 
-html, 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  width: 100%;
-  height: 100%;
-  font-size: 16px;
-}
-
-* {
   margin: 0;
-  padding: 0;
-}
-
-.wrapper {
-  display: grid;
-  grid-template-columns: 33% 33% 34%;
-  grid-template-rows: 1fr 3fr;
-}
-
-.hero-image-background {
-  background-image: url("https://miro.medium.com/max/2488/1*kZ5haMH3Au_Y9xoSZScZjw.png");
 }
 
 .hero {
-  background: no repeat center center;
-  background-attachment: scroll;
-  position: relative;
+  background: url('/images/markus-spiske-466ENaLuhLY-unsplash.jpg') center;
   background-size: cover;
-  grid-column: 1 / 4;
-  grid-row: 1;
-  margin: 0;
-  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
 }
+
+.hero > * {
+  color: white;
+}
+
+header { 
+  display: none;
+}
+
