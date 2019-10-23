@@ -1,5 +1,5 @@
 @import 'settings';
-
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400');
 
 html {
   scroll-behavior: smooth;
@@ -10,11 +10,20 @@ body {
 }
 
 .hero {
-  background: url('/images/markus-spiske-466ENaLuhLY-unsplash.jpg') center;
+  background: linear-gradient(rgba(30, 30, 30, .65), rgba(30, 30, 30, .65)),
+     url('/images/markus-spiske-466ENaLuhLY-unsplash.jpg') center;
   background-size: cover;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  padding: 4rem 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   align-items: center;
+  font-family: 'Source Sans Pro';
+}
+
+.headshot {
+  border-radius: 50%;
+  height: 180px;
+  justify-self: center;
 }
 
 .hero > * {

@@ -3,6 +3,8 @@
 open Html
 open SiteModel
 
+let biography = "I sling code, teach developers, and speak at conferences. Occasionally I write on this blog, usually about things I just learned myself."
+
 let defaultPage (siteModel : SiteModel) pageTitle content =
     html [] [
         head [] [
@@ -20,10 +22,10 @@ let defaultPage (siteModel : SiteModel) pageTitle content =
                             a [ Href "/" ] [ !! (siteModel.title)]
                             a [ Href "/archive.html"] [ !! "Archive"]
                         ]
-                        span [] []
+                        img [ Class "headshot"; Src "/images/square-head.jpeg" ]
                         span [] [
                             h1 [] [!! "Eric Smith"]
-                            h2 [] [!! "I am the shiznit"]
+                            h2 [] [!! biography]
                         ]
                     ]
                 ]
