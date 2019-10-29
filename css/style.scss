@@ -10,12 +10,13 @@ body {
 }
 
 .hero {
-  background: linear-gradient(rgba(30, 30, 30, .65), rgba(30, 30, 30, .65)),
-     url('/images/markus-spiske-466ENaLuhLY-unsplash.jpg') center;
+  background: linear-gradient(rgba(30, 30, 30, .45), rgba(30, 30, 30, .45)),
+     url('/images/will-swann-InZUMWIN7Ak-unsplash.jpg') center;
   background-size: cover;
   display: grid;
-  padding: 4rem 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  padding: 0rem 0rem 4rem 0rem;
+  grid-template-columns: repeat(2, minmax(240px, 1fr));
+  row-gap: 2ch;
   align-items: center;
   font-family: 'Source Sans Pro';
 }
@@ -23,7 +24,7 @@ body {
 .headshot {
   border-radius: 50%;
   height: 180px;
-  justify-self: center;
+  margin-left: 10%;
 }
 
 .hero > * {
@@ -31,6 +32,29 @@ body {
 }
 
 header { 
-  display: none;
+  grid-column: 1 / span 2;
+  padding: 0rem 0rem 0rem 0rem;
+  margin: 0;
+  background-color: darkgray;
+}
+
+header > ul {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+header > ul > li {
+  float: left;
+}
+
+header > ul > li > a {
+  display: block;
+  padding: 16px;
+  color: white;
+  text-decoration: white;
+  font-size: 1.25rem;
 }
 

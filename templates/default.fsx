@@ -16,20 +16,20 @@ let defaultPage (siteModel : SiteModel) pageTitle content =
         ]
         body [] [
             div [Class "wrapper"] [
-                div [Class "hero-image-background"] [
-                    div [Class "hero"] [
-                        header [] [
-                            a [ Href "/" ] [ !! (siteModel.title)]
-                            a [ Href "/archive.html"] [ !! "Archive"]
-                        ]
-                        img [ Class "headshot"; Src "/images/square-head.jpeg" ]
-                        span [] [
-                            h1 [] [!! "Eric Smith"]
-                            h2 [] [!! biography]
+                div [Class "hero"] [
+                    header [] [
+                        ul [] [
+                            li [] [ a [ Href "/" ] [ !! (siteModel.title)] ]
+                            li [] [ a [ Href "/speaking.html"] [ !! "Speaking" ] ]
+                            li [] [ a [ Href "/archive.html"] [ !! "Archive" ] ]
                         ]
                     ]
+                    img [ Class "headshot"; Src "/images/square-head.jpeg" ]
+                    span [] [
+                        h1 [] [!! "Eric Smith"]
+                        h2 [] [!! biography]
+                    ]
                 ]
-
                 div [ Id "content"] content
             ]
         ]
