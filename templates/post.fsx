@@ -1,3 +1,4 @@
+#r "../_bin/Fornax.Core.dll"
 #load "../siteModel.fsx"
 #load "default.fsx"
 

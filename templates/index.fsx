@@ -1,3 +1,4 @@
+#r "/Users/eric/Projects/paytonrules-version-two/_bin/Fornax.Core.dll"
 #load "../siteModel.fsx"
 #load "default.fsx"
 
